@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-from database import joblist_from_db, load_job_from_db
+from database import joblist_from_db, load_job_from_db, add_application_to_db
 
 app = Flask(__name__)
 
@@ -29,6 +29,7 @@ def job_info(id):
 def apply_job(id):
   data = request.form
   job = load_job_from_db(id)
+  add_application_to_db(id, data)
   #stroe in DB, send e-mail, get acknowledgement
   return render_template('application_submit.html', 
                           application=data,

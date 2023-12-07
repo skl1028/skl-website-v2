@@ -10,9 +10,15 @@
 
 >More job details will appear and user need to input some sort of information.  Name and email(these two items MUST need to input), other include : linkedin url, job expeerince and click submit.
 
->A validate message will informed that your job {job tiile} has been suhmitted with the peronnel details in applicaiton submit page.
+>A validate message will informed that **your job {job tiile} has been suhmitted** with the peronnel details in applicaiton submit page.
 
->Applicant information will add in the SQL database.
+>Applicant information will update the SQL database.
+
+>I offer two option that user can click the logo or nav bar return to main page, it instead only nav bar back to main page.
+
+>User click **Contact Us** button will turn email that user can write email to us, it is better than just show the contact point to the user.
+
+>The content of about us page is used loremipsum generator to generator several paragraph, it is easy and free. 
 
 ## Programming langauge
 + python
